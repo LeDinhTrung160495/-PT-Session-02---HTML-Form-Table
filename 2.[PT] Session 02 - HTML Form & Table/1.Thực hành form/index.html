@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thực Hành form</title>
+  </head>
+  <body>
+    <h2><strong>Create Account</strong></h2>
+    <form
+      action="thực hành form.html"
+      method="post"
+      enctype="multipart/form-data"
+    >
+      <fieldset>
+        <legend>Registration information</legend>
+        <label for="fname"><strong>First Name*:</strong></label>
+        <input
+          type="text"
+          name="fname"
+          id="fname"
+          placeholder="enter your first name"
+        />
+        <label for="lname"><strong>Last Name:</strong> </label>
+        <input
+          type="text"
+          name="lname"
+          id="lname"
+          placeholder="enter your last name"
+        />
+        <br />
+        <label for="email"><strong>Email*:</strong></label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="enter your email"
+        />
+        <label for="phone"><strong>Phone*:</strong> </label>
+        <input
+          type="tel"
+          name="phone"
+          id="phone"
+          placeholder="enter your phone number"
+        />
+        <br />
+        <label for="pwd"><strong>Password*:</strong></label>
+        <input
+          type="password"
+          name="pwd"
+          id="pwd"
+          minlength="8"
+          placeholder="enter your password"
+        />
+        <label for="confirmpwd"><strong>Confirm Password*:</strong></label>
+        <input
+          type="password"
+          name="confirmpwd"
+          id="confirmpwd"
+          placeholder="enter your password again "
+        />
+      </fieldset>
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="gender"><strong>Gender:</strong></label>
+        <input type="radio" name="gender" id="gender" value="male" />
+        <label for="gender">Male</label>
+        <input type="radio" name="gender" id="gender" value="female" />
+        <label for="gender">Female</label>
+        <label for="hobbies"><strong>Hobbies:</strong></label>
+        <input type="checkbox" name="hobby1" id="hobby1" />
+        <label for="hobby">Music</label>
+        <input type="checkbox" name="hobby2" id="hobby2" />
+        <label for="hobby">Sports</label>
+        <input type="checkbox" name="hobby3" id="hobby3" />
+        <label for="hobby">Travel</label>
+        <input type="checkbox" name="hobby4" id="hobby4" />
+        <label for="hobby">Movies</label><br />
+        <label for="income"><strong>Source of Income:</strong></label>
+        <select name="income" id="income">
+          <option value="employed">Employed</option>
+          <option value="crypto">Crypto</option>
+          <option value="stock">Stock</option>
+        </select>
+        <label for="income"><strong>Income:</strong></label>
+        <input
+          type="range"
+          name="income"
+          id="income"
+          min="30000000"
+          max="50000000"
+        />
+        <br />
+        <label for="age"><strong>Age:</strong></label>
+        <input type="number" name="age" id="age" min="18" max="70" />
+        <label for="picture"><strong>Profile Picture:</strong></label>
+        <input type="file" name="picture" id="picture" /><br />
+        <label for="birthday"><strong>Birthday:</strong></label>
+        <input type="date" name="birthday" id="birthday" />
+        <label for="address"><strong>Address:</strong></label>
+        <input type="text" name="address" id="address" /><br />
+        <label for="bio"><strong>Bio:</strong></label>
+        <textarea name="bio" id="bio" cols="50" rows="4"></textarea>
+      </fieldset>
+      <input type="button" value="Create" />
+      <input type="reset" value="Reset" />
+    </form>
+  </body>
+</html>
